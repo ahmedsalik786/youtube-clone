@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+}
+#container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding: 30px 20px;
+}
+#container > div{
+    height: 90px;
+     border-radius: 5px;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: column wrap;
+}
+#container > div>img{
+    width: 150px;
+    height: 90%;
+    /* border: 2px solid red; */
+    cursor: pointer;
+    transition: 0.4s;
+    
+}
+#container > div>img:hover{
+    transform: scaleX(1.1) ;
+}
+.title{
+    font-size: 8px;
+    text-shadow: 2px 2px black;
+    font-weight: 500;
+    color: white;
+    bottom: 0;
+    left: 20px;
+    color: red;
+}
+.channel-name,.view-count{
+    color: gray;
+    font-size: 5px;
+}
